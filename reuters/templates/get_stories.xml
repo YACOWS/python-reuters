@@ -1,0 +1,6 @@
+–<GetSummaryByStories_Request_1 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/OnlineReports_1">
+    <StoryId>{{ story_id }}</StoryId>
+</GetSummaryByStories_Request_1>
