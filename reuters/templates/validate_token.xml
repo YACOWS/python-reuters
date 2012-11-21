@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidateToken_Request_1 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/TokenManagement_1">
+        <ApplicationID xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/Common_1">{{ application_id }}</ApplicationID>
+        <Token xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/Common_1">{{ token }}</Token>
+</ValidateToken_Request_1>
