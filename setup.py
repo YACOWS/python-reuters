@@ -4,7 +4,7 @@
 from setuptools import setup
 
 setup(
-    name='reuterslib',
+    name='python-reuters',
     version='0.1',
     description='TODO',
     url='https://github.com/YACOWS/reuterslib',
