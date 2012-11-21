@@ -1,8 +1,0 @@
-<CreateServiceToken_Request_1
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/TokenManagement_1">
-    <ApplicationID xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/Common_1">{{ application_id }}</ApplicationID>
-    <Username>{{ username }}</Username>
-    <Password>{{ password }}</Password>
-</CreateServiceToken_Request_1>
