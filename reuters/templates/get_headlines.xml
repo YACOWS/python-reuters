@@ -1,7 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GetHeadlines_Request_2
-    Topic="{{ topic }}"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/OnlineReports_1"
-/>
+<?xml version="1.0"?>
+<Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3.org/2003/05/soap-envelope">
+    <Header>
+        <To xmlns="http://www.w3.org/2005/08/addressing">http://api.rkd.reuters.com/api/OnlineReports/OnlineReports.svc</To>
+        <MessageID xmlns="http://www.w3.org/2005/08/addressing">{{ message_id }}</MessageID>
+        <Action xmlns="http://www.w3.org/2005/08/addressing">http://www.reuters.com/ns/2006/05/01/webservices/rkd/OnlineReports_1/GetHeadlines_2</Action>
+        <Authorization xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/Common_1">
+            <ApplicationID>{{ application_id }}</ApplicationID>
+            <Token>{{ token }}</Token>
+        </Authorization>
+    </Header>
+    <Body>
+        <GetHeadlines_Request_2 xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/OnlineReports_1" Topic="{{ topic }}"/>
+    </Body>
+</Envelope>

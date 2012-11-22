@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CreateServiceToken_Request_1
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/TokenManagement_1">
-    <ApplicationID xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/Common_1">{{ application_id }}</ApplicationID>
-    <Username>{{ username }}</Username>
-    <Password>{{ password }}</Password>
-</CreateServiceToken_Request_1>
+<Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3.org/2003/05/soap-envelope">
+  <Header>
+    <To xmlns="http://www.w3.org/2005/08/addressing">https://api.rkd.reuters.com/api/TokenManagement/TokenManagement.svc/Anonymous</To>
+    <MessageID xmlns="http://www.w3.org/2005/08/addressing">{{ message_id }}</MessageID>
+    <Action xmlns="http://www.w3.org/2005/08/addressing">http://www.reuters.com/ns/2006/05/01/webservices/rkd/TokenManagement_1/CreateServiceToken_1</Action>
+  </Header>
+  <Body>
+    <CreateServiceToken_Request_1 xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/TokenManagement_1">
+      <ApplicationID xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/Common_1">{{ application_id }}</ApplicationID>
+      <Username>{{ username }}</Username>
+      <Password>{{ password }}</Password>
+  </CreateServiceToken_Request_1>
+</Body>
+</Envelope>
