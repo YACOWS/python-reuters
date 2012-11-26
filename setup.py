@@ -12,5 +12,7 @@ setup(
     package_data={
         'reuters': ['templates/*.xml'],
     },
+    test_suite='tests.suite',
     install_requires=['Jinja2'],
+    tests_require=['Mock'],
 )
