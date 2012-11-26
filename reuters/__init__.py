@@ -3,12 +3,12 @@
 from __future__ import absolute_import
 
 import uuid
-import httplib
 import logging
 
 import jinja2
 
 from xml.etree import ElementTree
+from reuters import httpslib as httplib
 from .utils import spaceless
 
 
