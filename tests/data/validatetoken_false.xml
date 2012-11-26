@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">http://www.reuters.com/ns/2006/05/01/webservices/rkd/TokenManagement_1/ValidateToken_1_Reply</a:Action>
+        <CacheResponse xmlns="http://www.reuters.com/ns/2008/03/01/webservices/rkd/Cache_1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DoNotStoreCacheResponse">
+            <Date>2012-11-26T19:40:14.2347943Z</Date>
+            <DoNotStore/>
+        </CacheResponse>
+        <a:RelatesTo>8c9f5dfba6d547238f9e9ebc740a81b3</a:RelatesTo>
+    </s:Header>
+    <s:Body>
+        <ValidateToken_Response_1 xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/TokenManagement_1">
+            <Expiration>2012-11-26T18:45:48Z</Expiration>
+            <Valid>false</Valid>
+            <Error>Expired</Error>
+        </ValidateToken_Response_1>
+    </s:Body>
+</s:Envelope>
+
