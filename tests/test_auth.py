@@ -9,8 +9,8 @@ class AuthenticationTest(ReutersTestCase):
         assert self.reuters._token is None
 
     def test_create_token(self):
-        with open(self.get_datafile('headline_response.xml')) as response_file:
-            self.reuters._request.return_value = response_file.read()
+        with open(self.get_datafile('create_token_response.xml')) as response:
+            self.reuters._request.return_value = response.read()
         assert self.reuters._create_service_token() == True
 
         with open(self.get_datafile('token')) as token_file:

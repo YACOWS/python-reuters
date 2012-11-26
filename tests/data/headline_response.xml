@@ -1,17 +1,110 @@
 <?xml version="1.0"?>
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
-	<s:Header>
-		<a:Action s:mustUnderstand="1">http://www.reuters.com/ns/2006/05/01/webservices/rkd/TokenManagement_1/CreateServiceToken_1_Reply</a:Action>
-		<CacheResponse xmlns="http://www.reuters.com/ns/2008/03/01/webservices/rkd/Cache_1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DoNotStoreCacheResponse">
-			<Date>2012-11-26T17:15:46.8165548Z</Date>
-			<DoNotStore/>
-		</CacheResponse>
-		<a:RelatesTo>41d38c1973cd46f5847ca30dea434334</a:RelatesTo>
-	</s:Header>
-	<s:Body>
-		<CreateServiceToken_Response_1 xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/TokenManagement_1" xmlns:global="http://www.reuters.com/ns/2006/05/01/webservices/rkd/Common_1">
-			<Expiration>2012-11-26T18:45:48.0873558Z</Expiration>
-			<global:Token>21AA30C04CC2D91AA98785617C60073ADB23DCE92DB0E92FD23C23862E86EF9405E366739269C251DF968E8C6BF79BD6B9B4F47F86E000FB773EF407DDE5DC0D09B410F37048166E3D720E79044A7E64FC57FDFF782FF56320B44953E727AA78</global:Token>
-		</CreateServiceToken_Response_1>
-	</s:Body>
+    <s:Header>
+        <a:Action s:mustUnderstand="1">http://www.reuters.com/ns/2006/05/01/webservices/rkd/OnlineReports_1/GetHeadlines_2_Reply</a:Action>
+        <CacheResponse xmlns="http://www.reuters.com/ns/2008/03/01/webservices/rkd/Cache_1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DoNotStoreCacheResponse">
+            <Date>2012-11-26T21:44:26.8023976Z</Date>
+            <DoNotStore/>
+        </CacheResponse>
+        <a:RelatesTo>af30a282f92e4f29b7f48b35206016d4</a:RelatesTo>
+    </s:Header>
+    <s:Body>
+        <GetHeadlines_Response_2 xmlns="http://www.reuters.com/ns/2006/05/01/webservices/rkd/OnlineReports_1">
+            <Story ID="urn:newsml:onlinereport.com:20121126:nRTROPT20121126175040SPE8AP07R">
+                <HL>
+                    <T>Oposi&#xE7;&#xE3;o quer ouvir envolvidos na opera&#xE7;&#xE3;o Porto Seguro no Congresso</T>
+                    <T>BRAS&#xCD;LIA, 26 Nov (Reuters) - Os partidos de oposi&#xE7;&#xE3;o ao governo se articulam no Congresso para ouvir os servidores federais que est&#xE3;o sendo investigados pela opera&#xE7;&#xE3;o Porto Seguro, da Pol&#xED;cia Federal, mesmo ap&#xF3;s a determina&#xE7;&#xE3;o da presidente Dilma Rousseff para exonerar e afastar os envolvidos.</T>
+                </HL>
+                <StoryDate>20121126T175040+0000</StoryDate>
+            </Story>
+            <Story ID="urn:newsml:onlinereport.com:20121126:nRTROPT20121126194509SPE8AP098">
+                <HL>
+                    <T>Petrobras quer royalties resolvidos para garantir novos leil&#xF5;es</T>
+                    <T>S&#xC3;O PAULO, 26 Nov (Reuters) - A Petrobras quer a r&#xE1;pida resolu&#xE7;&#xE3;o do impasse sobre a divis&#xE3;o de royalties do petr&#xF3;leo para ter garantias da realiza&#xE7;&#xE3;o dos leil&#xF5;es de novas &#xE1;reas de concess&#xE3;o e o andamento de projetos no pr&#xE9;-sal, disse a presidente da empresa nesta segunda-feira.</T>
+                </HL>
+                <StoryDate>20121126T194509+0000</StoryDate>
+            </Story>
+            <Story ID="urn:newsml:onlinereport.com:20121126:nRTROPT20121126161056SPE8AP06D">
+                <HL>
+                    <T>Produ&#xE7;&#xE3;o do pr&#xE9;-sal ser&#xE1; 47% do total da Petrobras em 2020--CEO</T>
+                    <T>S&#xC3;O PAULO, 26 Nov (Reuters) - A produ&#xE7;&#xE3;o de petr&#xF3;leo no pr&#xE9;-sal representar&#xE1; 47 por cento do total da produ&#xE7;&#xE3;o da Petrobras em 2020, disse a presidente da estatal, Maria das Gra&#xE7;as Foster, em evento nesta segunda-feira.</T>
+                </HL>
+                <StoryDate>20121126T161056+0000</StoryDate>
+            </Story>
+            <Story ID="urn:newsml:onlinereport.com:20121126:nRTROPT20121126194731SPE8AP09J">
+                <HL>
+                    <T>STF define pena de deputados e ex-parlamentares</T>
+                    <T>BRAS&#xCD;LIA, 26 Nov (Reuters) - Os ministros do Supremo Tribunal Federal (STF) estabeleceram nesta segunda-feira pena de 7 anos e 10 meses de pris&#xE3;o ao deputado federal Valdemar Costa Neto (PR-SP), al&#xE9;m de multa de mais de 1 milh&#xE3;o de reais pelos crimes de corrup&#xE7;&#xE3;o passiva, lavagem de dinheiro e forma&#xE7;&#xE3;o de quadrilha, aos quais foi condenado no julgamento do chamado mensal&#xE3;o.</T>
+                </HL>
+                <StoryDate>20121126T194731+0000</StoryDate>
+            </Story>
+            <Story ID="urn:newsml:onlinereport.com:20121126:nRTROPT20121126125746SPE8AP03H">
+                <HL>
+                    <T>Zona do euro busca acordo sobre Gr&#xE9;cia sem perdas em d&#xED;vida</T>
+                    <T>BRUXELAS, 26 Nov (Reuters) - O Fundo Monet&#xE1;rio Internacional (FMI) e ministros das Finan&#xE7;as da zona do euro deram in&#xED;cio nesta segunda-feira &#xE0; terceira tentativa em tr&#xEA;s semanas para liberar ajuda emergencial para a Gr&#xE9;cia, com autoridades afirmando que perdas na d&#xED;vida grega est&#xE3;o fora de quest&#xE3;o por enquanto.</T>
+                </HL>
+                <Thumbnail>2012-11-26T125746Z_1_BSPE8AP100E00_RTROPTP_1_MANCHETES-MACRO-GRECIA-LEGAL-ATUA.JPG</Thumbnail>
+                <StoryDate>20121126T125746+0000</StoryDate>
+                <Img>
+                    <Ref>urn:newsml:onlinereport.com:20121126:nRTROPT20121126125746BSPE8AP100E00</Ref>
+                    <Title>Ministros das Finan&#xE7;as da UE conversam durante reuni&#xE3;o do Eurogroup em Bruxelas, B&#xE9;lgica</Title>
+                    <Date>20121126T125746+0000</Date>
+                </Img>
+            </Story>
+            <Story ID="urn:newsml:onlinereport.com:20121126:nRTROPT20121126104827SPE8AP01B">
+                <HL>
+                    <T>Espanha usar&#xE1; at&#xE9; 42,5 bi de euros de fundos da UE para bancos</T>
+                    <T>MADRI, 26 Nov (Reuters) - O governo espanhol vai pedir entre 40 bilh&#xF5;es e 42,5 bilh&#xF5;es de euros (52 bilh&#xF5;es a 55 bilh&#xF5;es de euros) em ajuda financeira para seus bancos em crise, publicou o jornal El Pa&#xED;s nesta segunda-feira, citando fontes do governo.</T>
+                </HL>
+                <Thumbnail>2012-11-26T113314Z_1_BSPE8AP0W3H00_RTROPTP_1_MANCHETES-MACRO-ESPANHA-RESGATE.JPG</Thumbnail>
+                <StoryDate>20121126T104827+0000</StoryDate>
+                <Img>
+                    <Ref>urn:newsml:onlinereport.com:20121126:nRTROPT20121126113314BSPE8AP0W3H00</Ref>
+                    <Title>Pessoas diante de ag&#xEA;ncia do banco espanhol Bankia com picha&#xE7;&#xF5;es na parede, no centro de Madri</Title>
+                    <Date>20121126T113314+0000</Date>
+                </Img>
+            </Story>
+            <Story ID="urn:newsml:onlinereport.com:20121126:nRTROPT20121126191524SPE8AP08V">
+                <HL>
+                    <T>Fifa alerta Brasil a se preparar para recep&#xE7;&#xE3;o de torcedores</T>
+                    <T>RIO DE JANEIRO, 26 Nov (Reuters) - O Brasil foi alertado pela Fifa nesta segunda-feira a come&#xE7;ar a se preocupar com a recep&#xE7;&#xE3;o de cerca de 500.000 torcedores para a Copa do Mundo de 2014.</T>
+                </HL>
+                <Thumbnail>2012-11-26T203058Z_1_BSPE8AP1KZQ00_RTROPTP_1_MANCHETES-COPA-FIFA-ALERTA-TORCIDA.JPG</Thumbnail>
+                <StoryDate>20121126T191524+0000</StoryDate>
+                <Img>
+                    <Ref>urn:newsml:onlinereport.com:20121126:nRTROPT20121126203058BSPE8AP1KZQ00</Ref>
+                    <Title>Secret&#xE1;rio-geral da Fifa, J&#xE9;r&#xF4;me Valcke, gesticula durante coletiva de imprensa na Su&#xED;&#xE7;a, em julho. 05/07/2012 REUTERS/Michael Buholzer</Title>
+                    <Date>20121126T203058+0000</Date>
+                </Img>
+            </Story>
+            <Story ID="urn:newsml:onlinereport.com:20121126:nRTROPT20121126212101SPE8AP0A4">
+                <HL>
+                    <T>Prefeito de NY vai pedir US$9,8 bi ao Congresso por preju&#xED;zos do Sandy</T>
+                    <T>NOVA YORK, 26 Nov (Reuters) - O prefeito de Nova York, Michael Bloomberg, disse nesta segunda-feira que vai pedir ao Congresso 9,8 bilh&#xF5;es de d&#xF3;lares para cobrir custos n&#xE3;o-segurados relativos &#xE0; supertempestade Sandy.</T>
+                </HL>
+                <StoryDate>20121126T212101+0000</StoryDate>
+            </Story>
+            <Story ID="urn:newsml:onlinereport.com:20121126:nRTROPT20121126155059SPE8AP062">
+                <HL>
+                    <T>Produ&#xE7;&#xE3;o do pr&#xE9;-sal evitou queda maior na extra&#xE7;&#xE3;o da Petrobras</T>
+                    <T>S&#xC3;O PAULO, 26 Nov (Reuters) - A produ&#xE7;&#xE3;o "surpreendente" de petr&#xF3;leo no pr&#xE9;-sal evitou uma queda maior na extra&#xE7;&#xE3;o em setembro, quando a produ&#xE7;&#xE3;o foi a menor em mais de quatro anos no Brasil, disse a presidente da Petrobras, Maria das Gra&#xE7;as Foster, em evento nesta segunda-feira, em S&#xE3;o Paulo.</T>
+                </HL>
+                <Thumbnail>2012-11-26T155415Z_1_BSPE8AP186H00_RTROPTP_1_MANCHETES-ENERGIA-SET-PETROBRAS.JPG</Thumbnail>
+                <StoryDate>20121126T155059+0000</StoryDate>
+                <Img>
+                    <Ref>urn:newsml:onlinereport.com:20121126:nRTROPT20121126155415BSPE8AP186H00</Ref>
+                    <Title>Produ&#xE7;&#xE3;o do pr&#xE9;-sal evitou queda maior na extra&#xE7;&#xE3;o da Petrobras</Title>
+                    <Date>20121126T155415+0000</Date>
+                </Img>
+            </Story>
+            <Story ID="urn:newsml:onlinereport.com:20121126:nRTROPT20121126152213SPE8AP05F">
+                <HL>
+                    <T>PF faz busca em casa de vice da CBF e membro da Fifa Del Nero</T>
+                    <T>RIO DE JANEIRO, 26 Nov (Reuters) - O vice-presidente da CBF e membro do comit&#xEA; executivo da Fifa, Marco Polo Del Nero, teve sua casa vasculhada pela Pol&#xED;cia Federal e prestou depoimento em S&#xE3;o Paulo, nesta segunda-feira, como parte de uma opera&#xE7;&#xE3;o contra quadrilhas que atuavam na venda de informa&#xE7;&#xF5;es sigilosas e cometendo crimes contra o sistema financeiro, informou a PF.</T>
+                </HL>
+                <StoryDate>20121126T152213+0000</StoryDate>
+            </Story>
+        </GetHeadlines_Response_2>
+    </s:Body>
 </s:Envelope>
+
