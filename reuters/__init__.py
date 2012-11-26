@@ -58,9 +58,9 @@ class Reuters(object):
         return xml
 
     def _query_reuters(self, template, context, uri):
-        if not self.token_is_valid:
+        if not self.token_is_valid():
             self._create_service_token()
-            if not self.token_is_valid:
+            if not self.token_is_valid():
                 raise Exception
 
         xml = self._render_template(template, context)
@@ -105,7 +105,33 @@ class Reuters(object):
             stories.append(story_dict)
         return stories
 
-    @property
+    def get_story(self, story_id):
+        template = 'get_stories.xml'
+        context = {'story_id': story_id}
+        uri = '/api/OnlineReports/OnlineReports.svc'
+
+        response = self._query_reuters(template, context, uri)
+        root = ElementTree.fromstring(response)
+        
+        story = {}
+        
+        for elem in root[1][0][0].getchildren():
+            if elem.tag.endswith('}STORYML'):
+                for story_info in elem[0].getchildren():
+                    if story_info.tag.endswith('}HT'):
+                        story['title'] = story_info.text
+                    if story_info.tag.endswith('}TE'):
+                        story['content'] = story_info.text
+                    if story_info.tag.endswith('}CT'):
+                        story['creation_time'] = story_info.text
+                    if story_info.tag.endswith('}RT'):
+                        story['revision_time'] = story_info.text
+                    if story_info.tag.endswith('}LT'):
+                        story['local_time'] = story_info.text
+                    if story_info.tag.endswith('}SR'):
+                        story['thumbnail'] = story_info.getchildren()[0].text
+        return story
+
     def token_is_valid(self):
         NS = 'http://www.reuters.com/ns/2006/05/01/webservices/rkd/TokenManagement_1'
         if not self._token:

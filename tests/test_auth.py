@@ -18,7 +18,7 @@ class AuthenticationTest(ReutersTestCase):
         assert self.reuters._token == token
 
     def test_before_token_validation(self):
-        assert self.reuters.token_is_valid == False
+        assert self.reuters.token_is_valid() == False
 
     def test_token_validation_false(self):
         with open(self.get_datafile('token')) as token_file:
@@ -26,7 +26,7 @@ class AuthenticationTest(ReutersTestCase):
 
         with open(self.get_datafile('validatetoken_false.xml')) as response:
             self.reuters._request.return_value = response.read()
-        assert self.reuters.token_is_valid == False
+        assert self.reuters.token_is_valid() == False
 
     def test_token_validation_true(self):
         with open(self.get_datafile('token')) as token_file:
@@ -34,4 +34,4 @@ class AuthenticationTest(ReutersTestCase):
 
         with open(self.get_datafile('validatetoken_true.xml')) as response:
             self.reuters._request.return_value = response.read()
-        assert self.reuters.token_is_valid == True
+        assert self.reuters.token_is_valid() == True
