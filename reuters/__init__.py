@@ -88,7 +88,7 @@ class Reuters(object):
                     story_dict['headline_long'] = desc.text
 
                 if elem.tag.endswith('}Thumbnail'):
-                    story_dict['thumbnail'] = elem.text
+                    story_dict['thumbnail'] = elem.text.strip()
 
                 if elem.tag.endswith('}StoryDate'):
                     story_dict['date'] = elem.text # TODO: format
