@@ -129,7 +129,15 @@ class Reuters(object):
                     if story_info.tag.endswith('}LT'):
                         story['local_time'] = story_info.text
                     if story_info.tag.endswith('}SR'):
-                        story['thumbnail'] = story_info.getchildren()[0].text
+                        for img_info in story_info.getchildren():
+                            if img_info.attrib['Type'] == 'ThumbnailRef':
+                                story['thumbnail'] = img_info.text
+                            if img_info.attrib['Type'] == 'ImageTitle':
+                                story['image_title'] = img_info.text
+                            if img_info.attrib['Type'] == 'ImageRef':
+                                story['image_ref'] = img_info.text
+
+
         return story
 
     def token_is_valid(self):

@@ -33,3 +33,9 @@ class StoriesTest(ReutersTestCase):
 
     def test_thumbnail(self):
         assert self.story['thumbnail'] == 'http://thumbnail_url'
+
+    def test_image_title(self):
+        assert self.story['image_title'] == 'Consumidores observam televisores em megaloja da Casas Bahia no Rio de Janeiro em dezembro de 2009'
+
+    def test_image_ref(self):
+        assert self.story['image_ref'] == 'urn:newsml:onlinereport.com:20121113:nRTROPT20121113123426BSPE8AC0YXI00'
