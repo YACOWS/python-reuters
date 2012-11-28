@@ -111,6 +111,29 @@ class Reuters(object):
             stories.append(story_dict)
         return stories
 
+    def get_image(self, story_id):
+        template = 'get_stories.xml' # some template?!
+        context = {'story_id': story_id,
+                    'application_id': self._application_id,
+                    'token': self._token}
+        uri = '/api/OnlineReports/OnlineReports.svc'
+
+        response = self._query_reuters(template, context, uri)
+        root = ElementTree.fromstring(response)
+        
+        image = {}
+
+        for elem in root[1][0][0].getchildren():
+            if elem.tag.endswith('}STORYML') and len(elem) > 0:
+                for story_info in elem[0].getchildren():
+                    if story_info.tag.endswith('}HT'):
+                        image['title'] = story_info.text
+                    for img_info in story_info.getchildren():
+                         if img_info.attrib['Type'] == 'BaseRef':
+                             image['base_url'] = img_info.text
+        return image
+
+
     def get_story(self, story_id):
         template = 'get_stories.xml'
         context = {'story_id': story_id,

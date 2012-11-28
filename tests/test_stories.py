@@ -31,4 +31,3 @@ class StoriesTest(ReutersTestCase):
 
     def test_local_time_is_datetime(self):
         assert isinstance(self.story['lt'], datetime)
-

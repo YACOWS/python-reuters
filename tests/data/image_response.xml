@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+  <s:Header>
+    <a:Action s:mustUnderstand="1">http://www.reuters.com/ns/2006/05/01/webservices/rkd/OnlineReports_1/GetSummaryByStories_1_Reply</a:Action>
+    <CacheResponse xmlns="http://www.reuters.com/ns/2008/03/01/webservices/rkd/Cache_1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="DoNotStoreCacheResponse">
+      <Date>2012-11-28T16:44:12.7975788Z</Date>
+      <DoNotStore/>
+    </CacheResponse>
+    <a:RelatesTo>cbd390c69d1c43d3abf8780ff2cfcac6</a:RelatesTo>
+  </s:Header>
+  <s:Body>
+    <rkd:GetSummaryByStories_Response_1 xmlns:rkd="http://www.reuters.com/ns/2006/05/01/webservices/rkd/OnlineReports_1" xmlns="http://schemas.reuters.com/ns/2006/04/14/rmds/webservices/NDSNewsService_1/types" xmlns:ns0="http://schemas.reuters.com/ns/2006/04/14/rmds/webservices/NDSNewsService_1/types">
+      <ns0:StoryMLResponse>
+        <ns0:Status>
+          <ns0:StatusMsg>OK</ns0:StatusMsg>
+          <ns0:StatusCode>0</ns0:StatusCode>
+        </ns0:Status>
+        <ns0:STORYML xmlns:ns="http://schemas.reuters.com/ns/2006/04/14/rmds/webservices/NDSNewsService_1/types" xmlns="http://schemas.reuters.com/ns/2006/04/14/rmds/webservices/news/headlineml">
+          <HL space="preserve">
+            <ID>urn:newsml:onlinereport.com:20121128:nRTROPT20121128121221BSPE8AR0XWP00:38</ID>
+            <RE>38</RE>
+            <ST>Usable</ST>
+            <CT>2012-11-28T12:12:21-00:00</CT>
+            <RT>2012-11-28T12:12:21-00:00</RT>
+            <LT>2012-11-28T16:01:15-00:00</LT>
+            <PR>onlinereport.com</PR>
+            <AT>IDS</AT>
+            <UR>4</UR>
+            <LN>pt</LN>
+            <HT>gasdgasdgasdgasd</HT>
+            <TY>story</TY>
+            <PE>99999 7095 7095</PE>
+            <STORY_PE>99999 7095 7095</STORY_PE>
+            <CO/>
+            <TO>OLBRTOPNEWS_SPO RTR.L OLBRTOPNEWS RTRSY BRA OLRPIX PICT OBRTP OLBRTOPNEWS_US</TO>
+            <NI/>
+            <TN>1</TN>
+            <TE>&lt;Origin
+        Href="StoryRef"&gt;urn:newsml:onlinereport.com:20121128:nRTROPT20121128095128SPE8AR00L&lt;/Origin&gt;&lt;Origin
+        Href="ThumbnailRef"&gt;2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_1_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG&lt;/Origin&gt;&lt;Origin
+        Href="ViewRef"&gt;2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_2_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG&lt;/Origin&gt;&lt;Origin
+        Href="BaseRef"&gt;2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_3_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG&lt;/Origin&gt;&lt;Origin
+        Href="StoryTitle"&gt;Fitch corta rating da Argentina para perto de n&#xED;vel de default&lt;/Origin&gt;&lt;Origin
+        Href="StoryCreationDate"&gt;20121128T095128+0000&lt;/Origin&gt;&lt;Origin
+        Href="ImageCreationDate"&gt;20121128T121221+0000&lt;/Origin&gt;&lt;Origin
+        Href="ChannelCode"&gt;OLBRTOPNEWS&lt;/Origin&gt;&lt;Origin Href="LinkTitle"&gt;Generic Reuters Code&lt;/Origin&gt;
+                                    &lt;p&gt;Fitch reduziu rating de cr&#xE9;dito soberano da Argentina de &amp;quot;B&amp;quot; para &amp;quot;CC&amp;quot;, refletindo um &amp;quot;prov&#xE1;vel&amp;quot; default do pa&#xED;s. 10/10/2012 REUTERS/Marcos Brindicci&lt;/p&gt;
+                                </TE>
+            <PD/>
+            <SR>
+              <Origin Type="StoryRef">urn:newsml:onlinereport.com:20121128:nRTROPT20121128095128SPE8AR00L</Origin>
+              <Origin Type="ThumbnailRef">http://api.rkd.reuters.com/api/onlinereports/2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_1_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG.ashx</Origin>
+              <Origin Type="ThumbnailRefSecure">https://api.rkd.reuters.com/api/onlinereports/2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_1_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG.ashx</Origin>
+              <Origin Type="ThumbnailRefMPLS">http://api.rkd.extranet.thomsonreuters.biz/api/onlinereports/2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_1_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG.ashx</Origin>
+              <Origin Type="ThumbnailRefSecureMPLS">https://api.rkd.extranet.thomsonreuters.biz/api/onlinereports/2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_1_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG.ashx</Origin>
+              <Origin Type="ViewRef">http://api.rkd.reuters.com/api/onlinereports/2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_2_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG.ashx</Origin>
+              <Origin Type="ViewRefSecure">https://api.rkd.reuters.com/api/onlinereports/2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_2_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG.ashx</Origin>
+              <Origin Type="ViewRefMPLS">http://api.rkd.extranet.thomsonreuters.biz/api/onlinereports/2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_2_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG.ashx</Origin>
+              <Origin Type="ViewRefSecureMPLS">https://api.rkd.extranet.thomsonreuters.biz/api/onlinereports/2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_2_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG.ashx</Origin>
+              <Origin Type="BaseRef">http://api.rkd.reuters.com/api/onlinereports/2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_3_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG.ashx</Origin>
+              <Origin Type="BaseRefSecure">https://api.rkd.reuters.com/api/onlinereports/2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_3_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG.ashx</Origin>
+              <Origin Type="BaseRefMPLS">http://api.rkd.extranet.thomsonreuters.biz/api/onlinereports/2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_3_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG.ashx</Origin>
+              <Origin Type="BaseRefSecureMPLS">https://api.rkd.extranet.thomsonreuters.biz/api/onlinereports/2012-11-28T121221Z_1_BSPE8AR0XWP00_RTROPTP_3_MANCHETES-ARGENTINA-FITCH-CORTANOTA.JPG.ashx</Origin>
+              <Origin Type="StoryTitle">Fitch corta rating da Argentina para perto de n&#xED;vel de default</Origin>
+              <Origin Type="StoryCreationDate">20121128T095128+0000</Origin>
+              <Origin Type="ImageCreationDate">20121128T121221+0000</Origin>
+              <Origin Type="ChannelCode">OLBRTOPNEWS</Origin>
+              <Origin Type="LinkTitle">Generic Reuters Code</Origin>
+            </SR>
+          </HL>
+        </ns0:STORYML>
+      </ns0:StoryMLResponse>
+    </rkd:GetSummaryByStories_Response_1>
+  </s:Body>
+</s:Envelope>
