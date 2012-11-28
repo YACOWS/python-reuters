@@ -5,10 +5,10 @@ from mock import MagicMock
 
 from base import ReutersTestCase
 
-class StoriesTest(ReutersTestCase):
+class ImageTest(ReutersTestCase):
 
     def setUp(self):
-        super(StoriesTest, self).setUp()
+        super(ImageTest, self).setUp()
         self.reuters.token_is_valid = MagicMock(return_value=True)
         story_id = 'urn:newsml:onlinereport.com:20121128:nRTROPT20121128121221BSPE8AR0XWP00'
 
