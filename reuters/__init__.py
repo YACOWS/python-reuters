@@ -107,7 +107,9 @@ class Reuters(object):
 
     def get_story(self, story_id):
         template = 'get_stories.xml'
-        context = {'story_id': story_id}
+        context = {'story_id': story_id,
+                    'application_id': self._application_id,
+                    'token': self._token}
         uri = '/api/OnlineReports/OnlineReports.svc'
 
         response = self._query_reuters(template, context, uri)
