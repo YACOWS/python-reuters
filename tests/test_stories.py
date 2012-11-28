@@ -1,5 +1,6 @@
 
 from __future__ import absolute_import
+from datetime import datetime
 from mock import MagicMock
 
 from base import ReutersTestCase
@@ -22,14 +23,14 @@ class StoriesTest(ReutersTestCase):
     def test_content(self):
         assert self.story['content'] == 'My test content...'
 
-    def test_creation_time(self):
-        assert self.story['creation_time'] == '2012-11-13T13:34:03-00:00'
+    def test_creation_time_is_datetime(self):
+        assert isinstance(self.story['ct'], datetime)
 
-    def test_revision_time(self):
-        assert self.story['revision_time'] == '2012-11-13T13:34:03-00:00'
+    def test_revision_time_is_datetime(self):
+        assert isinstance(self.story['rt'], datetime)
 
-    def test_local_time(self):
-        assert self.story['local_time'] == '2012-11-14T11:20:07-00:00'
+    def test_local_time_is_datetime(self):
+        assert isinstance(self.story['lt'], datetime)
 
     def test_thumbnail(self):
         assert self.story['thumbnail'] == 'http://thumbnail_url'

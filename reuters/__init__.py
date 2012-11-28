@@ -7,6 +7,7 @@ import logging
 
 import jinja2
 
+from datetime import datetime
 from xml.etree import ElementTree
 from reuters import httpslib as httplib
 from .utils import spaceless
@@ -65,6 +66,11 @@ class Reuters(object):
 
         xml = self._render_template(template, context)
         return self._request(uri, xml)
+
+    def _str_to_dt(self, dt_str):
+        dt_str = dt_str[:-6].replace("T", " ")
+        dt = datetime.strptime(dt_str, "%Y-%m-%d %H:%M:%S")
+        return dt
 
     def get_headlines(self, topic):
         template = 'get_headlines.xml'
@@ -125,11 +131,11 @@ class Reuters(object):
                     if story_info.tag.endswith('}TE'):
                         story['content'] = story_info.text
                     if story_info.tag.endswith('}CT'):
-                        story['creation_time'] = story_info.text
+                        story['ct'] = self._str_to_dt(story_info.text)
                     if story_info.tag.endswith('}RT'):
-                        story['revision_time'] = story_info.text
+                        story['rt'] = self._str_to_dt(story_info.text)
                     if story_info.tag.endswith('}LT'):
-                        story['local_time'] = story_info.text
+                        story['lt'] = self._str_to_dt(story_info.text)
                     if story_info.tag.endswith('}SR'):
                         for img_info in story_info.getchildren():
                             if img_info.attrib['Type'] == 'ThumbnailRef':
