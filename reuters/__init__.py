@@ -118,7 +118,7 @@ class Reuters(object):
         story = {}
         
         for elem in root[1][0][0].getchildren():
-            if elem.tag.endswith('}STORYML'):
+            if elem.tag.endswith('}STORYML') and len(elem) > 0:
                 for story_info in elem[0].getchildren():
                     if story_info.tag.endswith('}HT'):
                         story['title'] = story_info.text
