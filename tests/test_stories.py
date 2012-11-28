@@ -23,6 +23,9 @@ class StoriesTest(ReutersTestCase):
     def test_content(self):
         assert self.story['content'] == 'My test content...'
 
+    def test_image_ref(self):
+        assert self.story['image_ref'] == 'urn:newsml:onlinereport.com:20121113:nRTROPT20121113123426BSPE8AC0YXI00'
+
     def test_creation_time_is_datetime(self):
         assert isinstance(self.story['ct'], datetime)
 
