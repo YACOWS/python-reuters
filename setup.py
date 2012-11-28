@@ -7,6 +7,8 @@ setup(
     name='python-reuters',
     version='0.1',
     description='TODO',
+    author='Rael Max',
+    author_email='contato@raelmax.com',
     url='https://github.com/YACOWS/reuterslib',
     packages=['reuters'],
     package_data={
