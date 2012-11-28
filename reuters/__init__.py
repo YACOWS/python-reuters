@@ -136,15 +136,6 @@ class Reuters(object):
                         story['rt'] = self._str_to_dt(story_info.text)
                     if story_info.tag.endswith('}LT'):
                         story['lt'] = self._str_to_dt(story_info.text)
-                    if story_info.tag.endswith('}SR'):
-                        for img_info in story_info.getchildren():
-                            if img_info.attrib['Type'] == 'ThumbnailRef':
-                                story['thumbnail'] = img_info.text
-                            if img_info.attrib['Type'] == 'ImageTitle':
-                                story['image_title'] = img_info.text
-                            if img_info.attrib['Type'] == 'ImageRef':
-                                story['image_ref'] = img_info.text
-
 
         return story
 
