@@ -119,7 +119,7 @@ class Reuters(object):
 
         response = self._query_reuters(template, context, uri)
         root = ElementTree.fromstring(response)
-        
+
         image = {}
 
         for elem in root[1][0][0].getchildren():
@@ -142,26 +142,22 @@ class Reuters(object):
 
         response = self._query_reuters(template, context, uri)
         root = ElementTree.fromstring(response)
-        
+
         story = {}
-        
-        for elem in root[1][0][0].getchildren():
-            if elem.tag.endswith('}STORYML') and len(elem) > 0:
-                for story_info in elem[0].getchildren():
-                    if story_info.tag.endswith('}HT'):
-                        story['title'] = story_info.text
-                    if story_info.tag.endswith('}TE'):
-                        story['content'] = story_info.text
-                    if story_info.tag.endswith('}CT'):
-                        story['ct'] = self._str_to_dt(story_info.text)
-                    if story_info.tag.endswith('}RT'):
-                        story['rt'] = self._str_to_dt(story_info.text)
-                    if story_info.tag.endswith('}LT'):
-                        story['lt'] = self._str_to_dt(story_info.text)
-                    if story_info.tag.endswith('}SR'):
-                        for img_info in story_info.getchildren():
-                             if img_info.attrib['Type'] == 'ImageRef':
-                                 story['image_ref'] = img_info.text
+
+        for elem in root.iter():
+            if elem.tag.endswith('}HT'):
+                story['title'] = elem.text
+            elif elem.tag.endswith('}TE'):
+                story['content'] = elem.text
+            elif elem.tag.endswith('}CT'):
+                story['ct'] = self._str_to_dt(elem.text)
+            elif elem.tag.endswith('}RT'):
+                story['rt'] = self._str_to_dt(elem.text)
+            elif elem.tag.endswith('}LT'):
+                story['lt'] = self._str_to_dt(elem.text)
+            elif elem.get('Type') == 'ImageRef':
+                story['image_ref'] = elem.text
 
         return story
 
