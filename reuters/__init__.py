@@ -127,6 +127,8 @@ class Reuters(object):
                 for story_info in elem[0].getchildren():
                     if story_info.tag.endswith('}HT'):
                         image['title'] = story_info.text
+                    if story_info.tag.endswith('}ID'):
+                        image['id'] = story_info.text
                     for img_info in story_info.getchildren():
                          if img_info.attrib['Type'] == 'BaseRef':
                              image['base_url'] = img_info.text
