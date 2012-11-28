@@ -76,31 +76,30 @@ class Reuters(object):
 
         stories = []
         for story in root[1][0].getchildren():
-
             story_dict = {
                 'id': story.get('ID'),
             }
 
-            for elem in story.getchildren():
+            for elem in story.iter():
                 if elem.tag.endswith('}HL'):
                     headline, desc = elem.getchildren()
                     story_dict['headline_short'] = headline.text
                     story_dict['headline_long'] = desc.text
 
-                if elem.tag.endswith('}Thumbnail'):
+                elif elem.tag.endswith('}Thumbnail'):
                     story_dict['thumbnail'] = elem.text.strip()
 
-                if elem.tag.endswith('}StoryDate'):
+                elif elem.tag.endswith('}StoryDate'):
                     story_dict['date'] = elem.text # TODO: format
 
-                if elem.tag.endswith('}Img'):
-                    for img_info in elem.getchildren():
-                        if img_info.tag.endswith('}Ref'):
-                            story_dict['image_ref'] = img_info.text
-                        if img_info.tag.endswith('}Title'):
-                            story_dict['image_title'] = img_info.text
-                        if img_info.tag.endswith('}Date'):
-                            story_dict['image_date'] = img_info.text
+                elif elem.tag.endswith('}Ref'):
+                    story_dict['image_ref'] = elem.text
+
+                elif elem.tag.endswith('}Title'):
+                    story_dict['image_title'] = elem.text
+
+                elif elem.tag.endswith('}Date'):
+                    story_dict['image_date'] = elem.text
 
             stories.append(story_dict)
         return stories
