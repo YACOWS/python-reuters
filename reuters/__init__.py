@@ -111,7 +111,7 @@ class Reuters(object):
         return stories
 
     def get_image(self, story_id):
-        template = 'get_stories.xml' # some template?!
+        template = 'get_stories.xml' # same template?!
         context = {'story_id': story_id,
                     'application_id': self._application_id,
                     'token': self._token}
