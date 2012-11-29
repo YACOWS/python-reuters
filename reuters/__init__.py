@@ -122,16 +122,14 @@ class Reuters(object):
 
         image = {}
 
-        for elem in root[1][0][0].getchildren():
-            if elem.tag.endswith('}STORYML') and len(elem) > 0:
-                for story_info in elem[0].getchildren():
-                    if story_info.tag.endswith('}HT'):
-                        image['title'] = story_info.text
-                    if story_info.tag.endswith('}ID'):
-                        image['id'] = story_info.text
-                    for img_info in story_info.getchildren():
-                         if img_info.attrib['Type'] == 'BaseRef':
-                             image['base_url'] = img_info.text
+        for elem in root.iter():
+            if elem.tag.endswith('}HT'):
+                image['title'] = elem.text
+            elif elem.tag.endswith('}ID'):
+                image['id'] = elem.text
+            elif elem.get('Type') == 'BaseRef':
+                image['base_url'] = elem.text
+
         return image
 
 
