@@ -6,7 +6,7 @@ from setuptools import setup
 setup(
     name='python-reuters',
     version='0.1',
-    description='TODO',
+    description='Python library to consume Reuters Soap Web services',
     author='Rael Max',
     author_email='contato@raelmax.com',
     url='https://github.com/YACOWS/reuterslib',
