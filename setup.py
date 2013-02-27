@@ -9,7 +9,7 @@ setup(
     description='Python library to consume Reuters Soap Web services',
     author='Rael Max',
     author_email='contato@raelmax.com',
-    url='https://github.com/YACOWS/reuterslib',
+    url='https://github.com/YACOWS/python-reuters',
     packages=['reuters'],
     package_data={
         'reuters': ['templates/*.xml'],
